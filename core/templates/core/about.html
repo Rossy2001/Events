@@ -1,0 +1,40 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content%}
+<body id='bg' style="background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('{% static 'core/images/pic1.jpg'%}');">
+   <h2 class="h1-responsive font-weight-bold text-center my-5 " style="color:#E9967A;">About Us</h2>
+    <section id="about">
+      <div class="container-2 mb-5" data-aos="fade-up">
+        <div class="row ">
+          <div class="col-lg-6 col-md-6 col-sm-12  px-4 py-4 about-bg border border-white">
+            <h2 class='mt-2'>ABOUT THE EVENT</h2>
+            <p align="justify" >Christ College of Engineering, established in 2015, is a new entrant in the field of professional education
+              Educational and Charitable Trust, Irinjalakuda. CMI fathers have an enviable track record of setting up top 
+             notch educational institutions, especially in Southern India; where-in God-given talents are nurtured, sound 
+             values are fostered and undesirable tendencies are corrected to pave the way for character formation and 
+             personality integration in the students. The idea for this institution was born out of the aspirations of the 
+             local people of different strata about the need for a professional educational institution at Irinjalakuda, 
+             which were conveyed to the CMI fathers. Keeping in mind the local aspirations, Christ College of Engineering 
+             aims to be a premier destination for engineering education in the immediate future, following in the footsteps 
+             of the many illustrious institutions that the CMI congregation has established and that are annually churning out
+             holistically formed global citizens.CCE is in the blessed hands of Carmelites of Mary Immaculate (CMI) Fathers who
+             have a proven track record of setting up of top class educational institutions, social organisations and hospitals
+             at various parts of southern India. </p>
+              </p>
+          </div>
+          <div class="col-lg-3 about-bg px-4 py-4 border border-white">
+            <h3 class='mt-3'>Where</h3>
+            <p>Auditorium of Christ College Of Engineering, Irinjalakuda</p>
+          </div>
+          <div class="col-lg-3 about-bg px-4 py-4 border border-white">
+            <h3 class='mt-3'>When</h3>
+            <p>Monday to Wednesday<br>10-12 December</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+</body>
+
+{% endblock content%}

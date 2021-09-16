@@ -1,0 +1,27 @@
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class=" nav-links" id="navLinks"> 
+         <ul>
+         <li><a href="/">HOME</a></li>
+         <li><a href="{% url 'about'%}">ABOUT</a></li>
+         <li><a href="{% url 'contact'%}">CONTACT</a></li>
+         
+         {% if request.user.is_authenticated %}
+
+        <li><a href="{% url 'events'%}">EVENTS</a></li> 
+        <li><a href="{% url 'logout'%}">LOGOUT</a></li>
+
+        {% else%}
+
+        <li><a href="{% url 'login'%}">LOGIN</a></li>
+        <li><a href="{% url 'signup'%}">SIGNUP</a></li>
+
+        {% endif%}
+        
+         
+         
+        <li><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></li>
+       <li> <button class="btn btn-outline-success" type="submit">Search</button></li>
+        </ul>
+       </div>
+    

@@ -1,0 +1,19 @@
+{% extends 'core/base.html'%}
+{% load static %}
+
+
+{% block content%}
+<body  id='bg'style= "background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('{% static 'core/images/pic1.jpg'%}');">
+
+
+<section id="hero">
+    <div class="hero-container " data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="mb-4 pb-0  ">The Megha <br><span>Event</span> </h1>
+      <p class=" mb-4 pb-0">10-12 December, Christ College Auditorium, Irinjalakuda</p>
+      <a href="{% url 'about'%}" class="about-btn scroll-to">About The Event</a>
+    </div>
+  </section>
+
+
+</body>
+{% endblock content %}
